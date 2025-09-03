@@ -4,9 +4,8 @@ class Solution(object):
         :type nums: List[int]
         :rtype: None Do not return anything, modify nums in-place instead.
         """
-        mov=0
-        for i in range(len(nums)):
-            if nums[i]!=0:
-                nums[mov],nums[i]=nums[i],nums[mov]
-                mov+=1
-        
+        left=0
+        for right in range(len(nums)):
+            if nums[right]!=0:
+                nums[left],nums[right]=nums[right],nums[left]
+                left+=1
