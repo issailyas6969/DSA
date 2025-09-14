@@ -10,14 +10,14 @@ class Solution(object):
         if n>m:
             return False
         count_s1=Counter(s1)
-        win_count=Counter(s2[:n])
-        if count_s1==win_count:
+        win=Counter(s2[:n])
+        if count_s1==win:
             return True
         for i in range(n,m):
-            win_count[s2[i]]+=1
-            win_count[s2[i-n]]-=1
-            if win_count[s2[i-n]] == 0:      
-                del win_count[s2[i-n]]
-            if win_count==count_s1:
+            win[s2[i]]+=1
+            win[s2[i-n]]-=1
+            if win[s2[i-n]]==0:
+                del win[s2[i-n]]
+            if count_s1==win:
                 return True
         return False
