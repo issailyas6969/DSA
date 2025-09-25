@@ -7,7 +7,6 @@ class Solution(object):
         overall_max,curr_max=nums[0],nums[0]
 
         for i in range(1,len(nums)):
-            curr_max=max(nums[i],nums[i]+curr_max)
-            overall_max=max(overall_max,curr_max)
+            curr_max=max(nums[i],curr_max+nums[i])
+            overall_max=max(curr_max,overall_max)
         return overall_max
-        
