@@ -9,8 +9,7 @@ class Solution(object):
         for i in range(len(nums)):
             if nums[i]==1:
                 max_count+=1
-                maxx=max(maxx,max_count)
+                maxx=max(max_count,maxx)
             else:
                 max_count=0
         return maxx
-        
