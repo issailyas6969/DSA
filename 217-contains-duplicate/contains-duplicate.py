@@ -5,11 +5,10 @@ class Solution(object):
         :rtype: bool
         """
         hash={}
-        for num in nums:
-            if num in hash:
+        for i in nums:
+            if i in hash:
                 return True
             else:
-                hash[num]=1
+                hash[i]=1
         return False
-
-        
+                
