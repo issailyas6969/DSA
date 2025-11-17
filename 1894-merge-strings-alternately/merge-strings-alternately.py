@@ -6,7 +6,7 @@ class Solution(object):
         :rtype: str
         """
         res=[]
-        i=j=0
+        i,j=0,0
         while i<len(word1) and j<len(word2):
             res.append(word1[i])
             res.append(word2[j])
