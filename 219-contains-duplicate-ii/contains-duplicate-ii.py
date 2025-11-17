@@ -14,3 +14,4 @@ class Solution(object):
             if len(seen)>k:
                 seen.remove(nums[right-k])
         return False
+    
