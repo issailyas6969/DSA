@@ -20,4 +20,3 @@ class Solution(object):
             if cp==win:
                 res.append(i-n+1)
         return res
-
