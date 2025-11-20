@@ -18,6 +18,6 @@ class Solution(object):
             win[s2[i-n]]-=1
             if win[s2[i-n]]==0:
                 del win[s2[i-n]]
-            if win==c_s1:
+            if c_s1==win:
                 return True
         return False
