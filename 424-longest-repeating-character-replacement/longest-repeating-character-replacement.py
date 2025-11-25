@@ -6,8 +6,7 @@ class Solution(object):
         :rtype: int
         """
         from collections import defaultdict
-        
-        count = defaultdict(int)
+        count=defaultdict(int)
         max_freq=0
         max_len=0
         left=0
@@ -19,3 +18,4 @@ class Solution(object):
                 left+=1
             max_len=max(max_len,right-left+1)
         return max_len
+        
