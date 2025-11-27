@@ -13,4 +13,4 @@ class Solution(object):
                 left+=1
             char_s.add(s[right])
             maxx=max(maxx,right-left+1)
-        return maxx
+        return maxx        
