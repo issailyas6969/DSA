@@ -15,5 +15,6 @@ class Solution(object):
                 win-=nums[left]
                 left+=1
         return 0 if minn==float("inf") else minn
-
+            
+            
         
