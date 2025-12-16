@@ -6,8 +6,7 @@ class Solution(object):
         :rtype: bool
         """
         from collections import Counter
-        n=len(s1)
-        m=len(s2)
+        n,m=len(s1),len(s2)
         if n>m:
             return False
         s1_c=Counter(s1)
