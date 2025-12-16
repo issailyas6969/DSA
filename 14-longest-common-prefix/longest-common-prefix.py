@@ -6,12 +6,10 @@ class Solution(object):
         """
         if not strs:
             return ""
-        prefix=strs[0]
-        for word in strs[1:]:
-            while not word.startswith(prefix):
-                prefix=prefix[:-1]
-            if not prefix:
+        pre=strs[0]
+        for i in strs[1:]:
+            while not i.startswith(pre):
+                pre=pre[:-1]
+            if not pre:
                 return ""
-        return prefix
-
-        
+        return pre       
