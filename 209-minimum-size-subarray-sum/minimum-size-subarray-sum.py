@@ -7,12 +7,12 @@ class Solution(object):
         """
         left=0
         minn=float("inf")
-        win=0
+        count=0
         for right in range(len(nums)):
-            win+=nums[right]
-            while win>=target:
+            count+=nums[right]
+            while count>=target:
                 minn=min(minn,right-left+1)
-                win-=nums[left]
+                count-=nums[left]
                 left+=1
         return 0 if minn==float("inf") else minn
 
