@@ -10,3 +10,4 @@ class Solution(object):
                 tot=nums[i]+nums[j]
                 if tot==target:
                     return [i,j]
+        
