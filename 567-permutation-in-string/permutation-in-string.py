@@ -11,7 +11,7 @@ class Solution(object):
             return False
         s1_c=Counter(s1)
         win=Counter(s2[:n])
-        if s1_c==win:
+        if win==s1_c:
             return True
         for i in range(n,m):
             win[s2[i]]+=1
@@ -21,4 +21,6 @@ class Solution(object):
             if win==s1_c:
                 return True
         return False
+
+
         
