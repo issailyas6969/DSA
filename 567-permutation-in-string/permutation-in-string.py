@@ -20,7 +20,4 @@ class Solution(object):
                 del win[s2[i-n]]
             if win==s1_c:
                 return True
-        return False
-
-
-        
+        return False       
