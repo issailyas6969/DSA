@@ -11,4 +11,5 @@ class Solution(object):
             else:
                 hash[i]=1
         return False
+
         
