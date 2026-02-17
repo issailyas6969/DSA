@@ -9,5 +9,4 @@ class Solution(object):
             for j in range(i+1,len(nums)):
                 tot=nums[i]+nums[j]
                 if tot==target:
-                    return [i,j]
-        
+                    return [i,j]        
