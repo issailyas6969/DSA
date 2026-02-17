@@ -5,12 +5,12 @@ class Solution(object):
         :rtype: int
         """
         count_s=set()
-        left=0
         maxx=0
-        for right in range(len(s)):
-            while s[right] in count_s:
-                count_s.remove(s[left])
-                left+=1
-            count_s.add(s[right])
-            maxx=max(maxx,right-left+1)
+        l=0
+        for r in range(len(s)):
+            while s[r] in count_s:
+                count_s.remove(s[l])
+                l+=1
+            count_s.add(s[r])
+            maxx=max(maxx,r-l+1)
         return maxx
