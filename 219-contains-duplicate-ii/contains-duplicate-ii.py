@@ -5,13 +5,11 @@ class Solution(object):
         :type k: int
         :rtype: bool
         """
-        seen=set()
-        for right in range(len(nums)):
-            if nums[right] in seen:
+        sett=set()
+        for i in range(len(nums)):
+            if nums[i] in sett:
                 return True
-            seen.add(nums[right])
-
-            if len(seen)>k:
-                seen.remove(nums[right-k])
-        return False
-    
+            sett.add(nums[i])
+            if i>=k:
+                sett.remove(nums[i-k])
+        return False       
