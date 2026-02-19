@@ -25,5 +25,3 @@ class Solution(object):
                 else:
                     l+=1
         return res
-
-        
