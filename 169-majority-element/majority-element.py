@@ -6,13 +6,10 @@ class Solution(object):
         """
         from collections import defaultdict
         count=defaultdict(int)
-        res=maxx=0
+        res,maxx=0,0
         for num in nums:
             count[num]+=1
-            if maxx<count[num]:
+            while count[num]> maxx:
                 res=num
                 maxx=count[num]
         return res
-
-
-        
