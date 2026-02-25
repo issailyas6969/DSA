@@ -5,11 +5,10 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        from collections import defaultdict
-        count=defaultdict(int)
-        max_freq=0
-        max_len=0
         left=0
+        max_len=0
+        max_freq=0
+        count=defaultdict(int)
         for right in range(len(s)):
             count[s[right]]+=1
             max_freq=max(max_freq,count[s[right]])
@@ -18,3 +17,6 @@ class Solution(object):
                 left+=1
             max_len=max(max_len,right-left+1)
         return max_len
+
+
+        
