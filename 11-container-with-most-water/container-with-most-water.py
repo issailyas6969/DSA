@@ -5,15 +5,13 @@ class Solution(object):
         :rtype: int
         """
         l,r=0,len(height)-1
-        area=0
+        max_area=0
         while l<r:
             width=r-l
             hei=min(height[l],height[r])
-            area=max(area,width*hei)
+            max_area=max(max_area,hei*width)
             if height[l]<height[r]:
                 l+=1
             else:
                 r-=1
-        return area
-
-        
+        return max_area
