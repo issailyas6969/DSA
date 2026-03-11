@@ -8,8 +8,6 @@ class Solution(object):
         for i in nums:
             if i in hash:
                 return True
-            else:
-                hash[i]=1
+            hash[i]=1
         return False
-
         
