@@ -5,9 +5,9 @@ class Solution(object):
         :rtype: bool
         """
         hash={}
-        for i in nums:
-            if i in hash:
+        for num in nums:
+            if num in hash:
                 return True
-            hash[i]=1
+            hash[num]=1
         return False
         
