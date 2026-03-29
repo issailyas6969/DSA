@@ -14,4 +14,3 @@ class Solution(object):
             count_s.add(s[r])
             longest=max(longest,r-l+1)
         return longest
-        
