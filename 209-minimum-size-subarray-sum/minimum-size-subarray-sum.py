@@ -14,5 +14,4 @@ class Solution(object):
                 minn=min(minn,right-left+1)
                 count-=nums[left]
                 left+=1
-        return 0 if minn==float("inf") else minn
-        
+        return 0 if minn==float("inf") else minn 
