@@ -11,13 +11,16 @@ class Solution(object):
             nums[l],nums[r]=nums[r],nums[l]
             l+=1
             r-=1
+
         l,r=0,k-1
         while l<r:
             nums[l],nums[r]=nums[r],nums[l]
             l+=1
             r-=1
+
         l,r=k,len(nums)-1
         while l<r:
             nums[l],nums[r]=nums[r],nums[l]
             l+=1
             r-=1
+        
