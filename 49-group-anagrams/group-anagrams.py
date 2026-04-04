@@ -11,4 +11,5 @@ class Solution(object):
             for ch in word:
                 count[ord(ch)-ord("a")]+=1
             anagrams[tuple(count)].append(word)
-        return list(anagrams.values())        
+        return list(anagrams.values())
+        
