@@ -5,20 +5,18 @@ class Solution(object):
         :type s2: str
         :rtype: bool
         """
-        from collections import Counter
         n,m=len(s1),len(s2)
         if n>m:
             return False
-        c_s1=Counter(s1)
+        s1_c=Counter(s1)
         win=Counter(s2[:n])
-        if win==c_s1:
+        if win==s1_c:
             return True
         for i in range(n,m):
             win[s2[i]]+=1
             win[s2[i-n]]-=1
             if win[s2[i-n]]==0:
                 del win[s2[i-n]]
-            if win==c_s1:
+            if win==s1_c:
                 return True
         return False
-        
