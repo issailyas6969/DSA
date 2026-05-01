@@ -13,4 +13,3 @@ class Solution(object):
             if i<len(word2):
                 res.append(word2[i])
         return "".join(res)
-        
