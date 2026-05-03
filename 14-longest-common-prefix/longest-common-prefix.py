@@ -12,4 +12,4 @@ class Solution(object):
                 pre=pre[:-1]
             if not pre:
                 return ""
-        return pre       
+        return pre
