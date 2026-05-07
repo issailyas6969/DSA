@@ -10,7 +10,7 @@ class Solution(object):
         for num in nums:
             count[num]+=1
             while count[num]>maxx:
-                res=num
                 maxx=count[num]
+                res=num
         return res
             
