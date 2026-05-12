@@ -12,4 +12,5 @@ class Solution(object):
             sett.add(nums[i])
             if i>=k:
                 sett.remove(nums[i-k])
-        return False       
+        return False
+        
